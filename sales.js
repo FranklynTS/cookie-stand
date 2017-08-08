@@ -5,7 +5,7 @@ var PdxAir = {
     avgCoS: 6.3,
 
     customerPH: function () {
-        return Math.floor(Math.random() * (this.maxCust - this.minCust));
+        return Math.floor(Math.random() * (this.maxCust - this.minCust) + this.minCust);
     },
     totalCookiesPh: function () {
         var cookieArry = [];
