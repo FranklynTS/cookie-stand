@@ -196,13 +196,13 @@ var WaterFront = {
         
         for ( var i = 0; i< 15; i ++){
     
-            var airport2 = document.getElementById ('WaterFront');
+            var airport1 = document.getElementById ('WaterFront');
     
             var aL1 = document.createElement ( 'li' );
     
             aL1.innerHTML = timeArry[i] + this.totalCookiesPh();
 
-            airport2.appendChild( aL1 );
+            airport1.appendChild( aL1 );
             
         }
 }
