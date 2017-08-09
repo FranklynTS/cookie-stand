@@ -1,6 +1,16 @@
 
-            table, td, tr {
-                border: solid 1px gray;
-                padding: 5px;
+            table {
+                border: double 
+                    2px 
+                    black;
+                    padding: 7px;
+            }
+            td {
+                border: solid 2px blue;
+                padding: 3px
+            }
+            th {
+                border: solid 3px green;
+                padding: 3px
             }
   

@@ -32,18 +32,17 @@ Location.prototype.sum = function (){
     }
     
 Location.prototype.addToDom = function () {
-        // var timeArry = ['6am: ', '7am: ', '8am: ', '9am: ', '10am: ', '11am: ', '12pm:', '1pm: ', 
-        //                 '2pm: ', '3pm: ', '4pm: ', '5pm: ', '6pm: ', '7pm: ', '8pm: '];
-    
+         var timeArry = ['6am: ', '7am: ', '8am: ', '9am: ', '10am: ', '11am: ', '12pm:', '1pm: ', 
+                        '2pm: ', '3pm: ', '4pm: ', '5pm: ', '6pm: ', '7pm: ', '8pm: '];
     
         var table = document.getElementById('location');
         var newRow = document.createElement('tr');
-       // newRow.setAttribute('id', this.id);
-        newRow.innerHTML = this.name;
+    //    newRow.setAttribute('id', this.id);
+        // newRow.innerHTML = this.name;
         table.appendChild(newRow);
 
         var title = document.createElement('td');
-        //title.innerHTML = (this.name);
+        title.innerHTML = (this.name);
         table.appendChild( title);
     
         for (var i = 0; i < 15; i++) {
