@@ -6,6 +6,7 @@ function Location ( name, minCust, maxCust, avgCoS ){
     this.maxCust = maxCust;
     this.avgCoS = avgCoS;
     this.cookieArry = []
+ 
     
     this.getTotal = 0    //
 
@@ -25,35 +26,37 @@ Location.prototype.totalCookiesPh = function () {
 Location.prototype.sum = function (){
         for ( var i = 0; i < 15; i++){
             this.getTotal = this.cookieArry[i] + this.getTotal;
-            console.log('hey babay');
         }
+
         return this.getTotal;
     }
     
 Location.prototype.addToDom = function () {
-        var timeArry = ['6am: ', '7am: ', '8am: ', '9am: ', '10am: ', '11am: ', '12pm:', '1pm: ', 
-                        '2pm: ', '3pm: ', '4pm: ', '5pm: ', '6pm: ', '7pm: ', '8pm: '];
+        // var timeArry = ['6am: ', '7am: ', '8am: ', '9am: ', '10am: ', '11am: ', '12pm:', '1pm: ', 
+        //                 '2pm: ', '3pm: ', '4pm: ', '5pm: ', '6pm: ', '7pm: ', '8pm: '];
+    
+    
+        var table = document.getElementById('location');
+        var newRow = document.createElement('tr');
+       // newRow.setAttribute('id', this.id);
+        newRow.innerHTML = this.name;
+        table.appendChild(newRow);
+        var title = document.createElement('td');
 
+    
         for (var i = 0; i < 15; i++) {
-            var airport1 = document.getElementById( this.name);
-            var aL1 = document.createElement('li');
-            aL1.innerHTML = timeArry[i] + this.cookieArry[i];
 
-            airport1.appendChild(aL1);
+            var aL1 = document.createElement('td');
+            aL1.innerHTML = this.cookieArry[i];
+            table.appendChild(aL1);
         }
 
-        var aLi = document.createElement( 'li');
-        aLi.innerHTML =  'Total : ' + this.sum();
-        airport1.appendChild(aLi);
+        // var aLi = document.createElement( 'td');
+        // aLi.innerHTML =  'Total : ' + this.sum();
+        // airport1.appendChild(aLi);
+
+
 }
-
-//Location.prototype.addToDom = function (){
-  //  var list = document.getElementById (this.name);
-  //  var listItem = document.createElement ( 'li' );
-  //  listItem.innerText = this.name;
-   // list.appendChild (listItem);
-//}
-
 var PdxAirport = new Location ( 'PdxAirport', 23, 65, 6.3);
 var Pioneer = new Location ( 'PioneerSquare', 3, 24, 1.2);
 var Powells = new Location ( 'Powells', 11, 38, 3.7);
@@ -89,7 +92,7 @@ var WaterFront = new Location ( 'WaterFront', 2, 16, 4.6);
 //         }
 //     }
 // };
-// PdxAir.addToDom();
+//  PdxAir.addToDom();
 
 // var pioneer = {
 //     name: 'Pioneer Square',
@@ -207,4 +210,4 @@ var WaterFront = new Location ( 'WaterFront', 2, 16, 4.6);
 //     }
 // };
 // WaterFront.addToDom();
-console.log()
+//console.log()
