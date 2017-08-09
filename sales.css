@@ -1,20 +1,25 @@
 
     html { 
-       background: url(cookie-stand/salmon.JPG);
+       background: url(cookie-stand/salmon.jpg);
         color: black;  
     }
     table {
         border: double 
          2px 
          black;
-        padding: 7px;
+        padding: 15px;
     }
     td {
         border: solid 2px blue;
-        padding: 3px
-    }
-    th {
-        border: solid 3px green;
-        padding: 3px
-    }    
-      
+        /* border-spacing: 5px 500px; */
+        padding: 15px 15px 15px 15px;
+     }
+     th {    
+     empty-cells: hide;}  
+     
+
+     th {
+        border: dotted 3px green;
+        padding: 15px;
+    }   
+         
