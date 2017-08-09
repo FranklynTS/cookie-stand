@@ -41,14 +41,16 @@ Location.prototype.addToDom = function () {
        // newRow.setAttribute('id', this.id);
         newRow.innerHTML = this.name;
         table.appendChild(newRow);
-        var title = document.createElement('td');
 
+        var title = document.createElement('td');
+        //title.innerHTML = (this.name);
+        table.appendChild( title);
     
         for (var i = 0; i < 15; i++) {
 
             var aL1 = document.createElement('td');
             aL1.innerHTML = this.cookieArry[i];
-            table.appendChild(aL1);
+            table.appendChild( aL1);
         }
 
         // var aLi = document.createElement( 'td');
