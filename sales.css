@@ -1,18 +1,25 @@
 
     html { 
-        /* background: url(cookie-stand/salmon.jpg);  */
+        /* background: url(salmon.jpg); */
+        align-self: auto; 
+
         color: black;  
+    }
+    header{
+        align-self: auto;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: black;
     }
     table {
         border: double 
          2px 
          black;
-        padding: 15px;
+        padding: 10px;
     }
     td {
         border: solid 2px blue;
         /* border-spacing: 5px 500px; */
-        padding: 15px 15px 15px 15px;
+        padding: 10px 10px 10px 10px;
      }
      th {    
      empty-cells: hide;}  
@@ -20,6 +27,6 @@
 
      th {
         border: dotted 3px green;
-        padding: 15px;
+        padding: 10px;
     }   
          

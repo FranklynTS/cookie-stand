@@ -1,6 +1,6 @@
 <!DOCTYPE html>
     <html>
-        <link rel = "stylesheet" type = "text/css" href="sales.css">
+        <link rel = 'stylesheet' type = 'text/css' href='sales.css'>
         <head>
         
         </head>
@@ -28,13 +28,36 @@
                         <th> 6:00pm </th>
                         <th> 7:00pm </th>
                         <th> 8:00pm </th>
+                        <th>Daily Total </th>
                             </tr> 
                     </thead>
-                         <tbody id = location>  
+                         <tbody id = 'location'>  
                         
                         </tbody>
+
+                        <tfoot id = 'foot'></tfoot>
                 </table>
             </section>
+
+            <form id = addStore>
+                <fieldset>
+                    <legend>New Store Location</legend>
+
+                    <label>Location</label>
+                    <input type = 'text' id = 'location' required>
+
+                    <label>Min-Customer</label>
+                    <input type = 'numer' id = 'minCusto' required>
+
+                    <label>Max-Customer</label>
+                    <input type = 'number' id = 'maxCusto' required>
+
+                    <label>Average Cookies Sold</label>
+                    <input type = 'number' id = 'avgCSold' required>
+            
+                    <button type = 'submit'>Submit</button>
+                </fieldset>
+            </form>
 
         <script type = 'text/javascript' src= 'sales.js'></script>
 
