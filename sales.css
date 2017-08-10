@@ -1,9 +1,14 @@
 
     html { 
         /* background: url(salmon.jpg); */
-        align-self: auto;; 
+        align-self: auto; 
 
         color: black;  
+    }
+    header{
+        align-self: auto;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: black;
     }
     table {
         border: double 
