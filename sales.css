@@ -1,6 +1,8 @@
 
     html { 
-        /* background: url(cookie-stand/salmon.jpg);  */
+        /* background: url(salmon.jpg); */
+        align-self: auto;; 
+
         color: black;  
     }
     table {

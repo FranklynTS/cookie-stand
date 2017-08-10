@@ -12,7 +12,7 @@ function Location(name, minCust, maxCust, avgCoS) {
 
     this.totalCookiesPh()
     this.addToDom();
-    this.sum(); //
+    this.sum(); 
 }
 Location.prototype.customerPH = function () {
     return Math.floor(Math.random() * (this.maxCust - this.minCust) + this.minCust);
@@ -25,7 +25,7 @@ Location.prototype.totalCookiesPh = function () {
     }
 }
 Location.prototype.sum = function () {
-    for (var i = 0; i < 15; i++) {
+    for (var i = 0; i < this.cookieArry.length; i++) {
         this.getTotal = this.cookieArry[i] + this.getTotal;
     }
 
@@ -52,12 +52,14 @@ Location.prototype.addToDom = function () {
         aL1.innerHTML = this.cookieArry[i];
         newRow.appendChild(aL1);
     }
-    var sum = document.createElement('td'); //
-    sum.innerHTML = this.sum(); //
-    newRow.appendChild(sum); //
+    var sum = document.createElement('td'); 
+    sum.innerHTML = this.sum(); 
+    newRow.appendChild(sum); 
+
+
 }
 
-function hourlyTotals() { // class start
+function hourlyTotals() { 
 
     var tbody = document.getElementById('location');
     var hourlyTotalsRow = document.createElement('tr');
@@ -88,9 +90,11 @@ var WaterFront = new Location('WaterFront', 2, 16, 4.6);
 var allShops = [PdxAirport, Pioneer, Powells, StJohns, WaterFront]
 hourlyTotals(); //
 
-var form = document.getElementById('addStore');
-form.addEventListener('click', formHandler);
+var form = document.getElementById( 'addStore');
+form.addEventListener('submit', formHandler);
 
 function formHandler() {
-    console.log(event)
+    event.preventDefault();
+
+    var newStoreName = new Location( this.location.value, this.minCusto.value, this.maxCusto.value, this.avgCSold.value);
 };
