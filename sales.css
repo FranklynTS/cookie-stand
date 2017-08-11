@@ -1,7 +1,7 @@
 
     html { 
-        /* background: url(salmon.jpg); */
-        align-self: auto; 
+         background: url(salmon.jpg);
+        
 
         color: black;  
     }
@@ -9,6 +9,7 @@
         align-self: auto;
         font-family: Georgia, 'Times New Roman', Times, serif;
         color: black;
+        font-size: 60px;
     }
     table {
         border: double 
