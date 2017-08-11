@@ -1,33 +1,45 @@
+html {
+    background: url(salmon.png) no-repeat center bottom, linear-gradient(-90deg, chocolate, saddlebrown);
+    /* background: brown; 
+    background: -webkit-linear-gradient(-90deg, chocolate, saddlebrown); 
+    background: -o-linear-gradient(-90deg, chocolate, saddlebrown); 
+    background: -moz-linear-gradient(-90deg, chocolate, saddlebrown);  */
+ 
+   
+}
 
-    html { 
-         background: url(salmon.jpg);
-        
+header {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 70px;
+}
 
-        color: black;  
-    }
-    header{
-        align-self: auto;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: black;
-        font-size: 60px;
-    }
-    table {
-        border: double 
-         2px 
-         black;
-        padding: 10px;
-    }
-    td {
-        border: solid 2px blue;
-        /* border-spacing: 5px 500px; */
-        padding: 10px 10px 10px 10px;
-     }
-     th {    
-     empty-cells: hide;}  
-     
+table {
+    margin: auto;
+    background-color: sandybrown;
+    border: double 2px black;
+    padding: 5px;
+}
 
-     th {
-        border: dotted 3px green;
-        padding: 10px;
-    }   
-         
+td {
+    border: solid 2px;
+    padding: 5px 5px 5px 5px;
+}
+
+th {
+    empty-cells: hide;
+}
+#addStore {
+    width: fit-content;
+    margin: 100px auto;
+    text-align: center;
+    background: brown; 
+    background: -webkit-linear-gradient(-90deg, chocolate, saddlebrown);
+    background: -o-linear-gradient(-90deg, chocolate, saddlebrown);
+    background: -moz-linear-gradient(-90deg, chocolate, saddlebrown); 
+    background: linear-gradient(-90deg, chocolate, saddlebrown);
+   
+}
+
+
