@@ -1,0 +1,11 @@
+header  {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 70px;
+}
+button {
+    margin: 45ps auto;
+    color: black;
+    font-size: 10px;
+}
