@@ -1,18 +1,58 @@
-header  {
+html{
+    background-color: salmon;
+}
+header {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: black;
     font-size: 70px;
 }
+
 button {
     margin: 45ps auto;
     color: black;
-    font-size: 10px;
+    font-size: 15px;
 }
-body{
+
+body {
     text-align: center;
 }
+
 #welcome {
+    font-size: 20px;
     padding: 70px;
     background: url(fish.jpg) no-repeat left;
+}
+
+#bio {
+    font-weight: bold;
+    background: url(cutter.png) no-repeat center;
+    border: 2px solid black;
+    padding: 70px 25px;
+    margin: 50px 0px;
+}
+
+#refund {
+    padding: 70px 50px;
+    background: url(frosted-cookie.jpg) repeat bottom;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.family-text p {
+    margin: 5%;
+    font-weight: bold;
+    color: saddlebrown;
+    font-size: 20pt;
+}
+
+.family-img {
+    background: url(family.jpg) no-repeat center;
+    border: 2px solid black;
+    padding: 200px
+}
+button{
+    border-radius: 12px;
+    font-size: 15px;
+    background-color: tan;
 }

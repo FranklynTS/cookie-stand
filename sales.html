@@ -1,67 +1,70 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <title>Cookie Sheets</title> 
-                <link rel = 'stylesheet' type = 'text/css' href='sales.css'>
-        
-        </head>
-        
-        <body>
-            <header>Cookie Stores Data Sheet</header>
-            <section>
-                <h1></h1>
-                <table>
-                    <thead>
-                        <tr>
-                         <th></th>
-                        <th> 6:00am </th>
-                        <th> 7:00am </th>
-                        <th> 8:00am </th>
-                        <th> 9:00am </th>
-                        <th> 10:00am </th>
-                        <th> 11:00am </th>
-                        <th> 12:00pm </th>
-                        <th> 1:00pm </th>
-                        <th> 2:00pm </th>
-                        <th> 3:00pm </th>
-                        <th> 4:00pm </th>
-                        <th> 5:00pm </th>
-                        <th> 6:00pm </th>
-                        <th> 7:00pm </th>
-                        <th> 8:00pm </th>
-                        <th>Daily Total </th>
-                            </tr> 
-                    </thead>
-                         <tbody id = 'location'>  
-                        
-                        </tbody>
+<html>
 
-                        <tfoot id = 'foot'></tfoot>
-                </table>
-            </section>
+<head>
+    <title>Cookie Sheets</title>
+    <link rel='stylesheet' type='text/css' href='sales.css'>
 
-            <form id = 'addStore'>
-                <fieldset id = 'dataTable'>
-                    <legend>New Store Location</legend>
+</head>
 
-                    <label>Location</label>
-                    <input type = 'text' id = 'location' required>
+<body>
+    <header>Cookie Stores Data Sheet</header>
+    <h1><a href="index.html"><button>Home Page</button></a></h1>
+    <h1><a href="location.html"><button>Locations</button></a></h1>
+    <section>
+        <h1></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th> 6:00am </th>
+                    <th> 7:00am </th>
+                    <th> 8:00am </th>
+                    <th> 9:00am </th>
+                    <th> 10:00am </th>
+                    <th> 11:00am </th>
+                    <th> 12:00pm </th>
+                    <th> 1:00pm </th>
+                    <th> 2:00pm </th>
+                    <th> 3:00pm </th>
+                    <th> 4:00pm </th>
+                    <th> 5:00pm </th>
+                    <th> 6:00pm </th>
+                    <th> 7:00pm </th>
+                    <th> 8:00pm </th>
+                    <th>Daily Total </th>
+                </tr>
+            </thead>
+            <tbody id='location'>
 
-                    <label>Min-Customer</label>
-                    <input type = 'numer' id = 'minCusto' required>
+            </tbody>
 
-                    <label>Max-Customer</label>
-                    <input type = 'number' id = 'maxCusto' required>
+            <tfoot id='foot'></tfoot>
+        </table>
+    </section>
 
-                    <label>Average Cookies Sold</label>
-                    <input type = 'number' id = 'avgCSold' required>
-            
-                    <button type = 'submit'>Submit</button>
-                </fieldset>
-            </form>
+    <form id='addStore'>
+        <fieldset id='dataTable'>
+            <legend>New Store Location</legend>
 
-        <script type = 'text/javascript' src= 'sales.js'></script>
+            <label>Location</label>
+            <input type='text' id='location' required>
 
-        </body>
+            <label>Min-Customer</label>
+            <input type='numer' id='minCusto' required>
 
-        </html>
+            <label>Max-Customer</label>
+            <input type='number' id='maxCusto' required>
+
+            <label>Average Cookies Sold</label>
+            <input type='number' id='avgCSold' required>
+
+            <button type='submit'>Submit</button>
+        </fieldset>
+    </form>
+
+    <script type='text/javascript' src='sales.js'></script>
+
+</body>
+
+</html>
