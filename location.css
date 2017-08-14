@@ -1,24 +1,27 @@
-html{
+html {
     text-align: center;
     background: linear-gradient(-90deg, saddlebrown, salmon);
 }
-header{
+
+header {
     font-weight: bold;
     font-size: 40px;
-
 }
-button{
+
+button {
     border-radius: 12px;
     font-size: 20px;
     background-color: tan;
 }
-p{
+
+p {
     margin: 15px 200px;
     padding: 10px;
     border: 3px solid black;
-    color:tan;  
+    color: tan;
 }
-#t-shirt{
+
+#t-shirt {
     padding: 100px;
     background: url(shirt.jpg) no-repeat left;
     color: black;
