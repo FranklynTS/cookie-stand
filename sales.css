@@ -35,8 +35,9 @@ th {
     background: brown;
     background: -webkit-linear-gradient(-90deg, chocolate, saddlebrown);
 }
-button{
+
+button {
     border-radius: 12px;
     font-size: 20px;
-    background-color:white;
+    background-color: white;
 }
