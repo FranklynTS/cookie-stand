@@ -1,11 +1,8 @@
-html {
+html,
+body {
+    text-align: center;
     background: url(salmon.png) no-repeat center bottom, linear-gradient(-90deg, chocolate, saddlebrown);
-    /* background: brown; 
-    background: -webkit-linear-gradient(-90deg, chocolate, saddlebrown); 
-    background: -o-linear-gradient(-90deg, chocolate, saddlebrown); 
-    background: -moz-linear-gradient(-90deg, chocolate, saddlebrown);  */
- 
-   
+    height: 100%
 }
 
 header {
@@ -30,16 +27,16 @@ td {
 th {
     empty-cells: hide;
 }
+
 #addStore {
     width: fit-content;
-    margin: 100px auto;
+    margin: 45px auto;
     text-align: center;
-    background: brown; 
+    background: brown;
     background: -webkit-linear-gradient(-90deg, chocolate, saddlebrown);
-    background: -o-linear-gradient(-90deg, chocolate, saddlebrown);
-    background: -moz-linear-gradient(-90deg, chocolate, saddlebrown); 
-    background: linear-gradient(-90deg, chocolate, saddlebrown);
-   
 }
-
-
+button{
+    border-radius: 12px;
+    font-size: 20px;
+    background-color:white;
+}
